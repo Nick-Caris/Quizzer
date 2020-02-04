@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap');
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap');
+}
+
+:root {
+    --violet: #46178f;
+    --violet-dark: #25076b;
+    --violet-light: #864cbf;
+    --violet-lighets: #c2a5df;
+
+    --orange: #eb670f;
+    --orange-dark: #e24104;
+    --orange-light: #f5a23d;
+    --orange-lightes: #fad09e;
+
+    --red: #e21b3c;
+    --red-dark: #c60929;
+    --red-light: #ff3355;
+    --red-lightest: #ff99aa;
+
+    --yellow: #ffa602;
+    --yellow-dark: #d89e00;
+    --yellow-light: #ffc00a;
+    --yellow-lightest: #ffdd33;
+
+    --blue: #1368ce;
+    --blue-dark: #0542b9;
+    --blue-light: #45a3e5;
+    --blue-lightest: #a2d1f2;
+
+    --cyan: #0aa3a3;
+    --cyan-dark: #028282;
+    --cyan-light: #33cccc;
+    --cyan-lightest: #99e5e5;
+
+    --green: #26890c;
+    --green-dark: #106b03;
+    --green-light: #66bf39;
+    --green-lightest: #b2df9c;
+
+    --white: #f2f2f2;
+    --grey: #b0b0b0;
+    --black: #333333;
+}
+
+body {
+    background: var(--white);
+    font-family: 'Montserrat';
+    margin: 2.5%
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: bottom;
+    min-width: 6.25rem;
+    height: 2.625rem;
+    padding: 0 1rem 4px;
+    padding-top: 0px;
+    padding-right: 1rem;
+    padding-bottom: 4px;
+    padding-left: 1rem;
+    border-radius: 4px;
+    box-shadow: inset 0 -4px rgba(0,0,0,.25);
+    font-family: Montserrat,Helvetica Neue,helvetica,arial,sans-serif;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    color: white;
+    border: 0;
+}
+
+.info-box {
+    border: 4px;
+    border-radius: 4px;
+    background: var(--orange-light);
+    min-width: 18rem; 
+    min-height: 4rem;
+    float: right;
+    box-shadow: inset 0 -4px rgba(0,0,0,.25);
+}
+
+.room-code-text {
+    color: white;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0.5em
+}
+
+.room-code-code {
+    color: var(--black);
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 0.5em;
+    font-weight: bold;
+}
+
+.lang-toggle {
+    min-width: 0;
+}
+
+.bg-green {
+    background: var(--green);
+}
+
+.bg-grey {
+    background: var(--grey);
+}
+
+.bg-red {
+    background: var(--red);
+}
+
+.bg-orange{
+    background: var(--orange);
+}
+
+.team-approval-container {
+    margin-bottom: 1em;
+}
+
+.team-approval {
+    padding-bottom: 1em;
+    margin-top:1em;
+}
+
+.accept-reject {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.accept-reject-info {
+    display: inline-block;
+    background: #fff;
+    margin-right: 1em;
+    border: 4px;
+    border-radius: 4px;
+    width: 350px;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 1em;
+    text-align: left;
+}
+
+.approve {
+    background: var(--green-lightest)
+}
+
+.accept {
+    max-width: 1em;
+    padding-right: 0;
+    padding-left: 0;
+    height: 50px;
+    width: 50px;
+    background: var(--green);
+    margin-right: 1em;
+}
+
+.reject {
+    max-width: 2.5em;
+    padding-right: 0;
+    padding-left: 0;
+    height: 50px;
+    width: 50px;
+    background: var(--red)
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "question-select question-management" "question-select question-selected" "question-select team-answers" "question-select team-answers" "question-select team-answers" "question-select team-answers" "question-select quiz-management";
+  }
+  
+  .question-select { grid-area: question-select; }
+  
+  .question-management { grid-area: question-management; }
+  
+  .question-selected { grid-area: question-selected; }
+  
+  .team-answers { grid-area: team-answers; }
+  
+  .quiz-management { grid-area: quiz-management; }
+
+.question-management-start {
+    margin-right: 0.5em;
+    background: var(--orange)
+}
+
+.question-management-start:disabled {
+    background: var(--grey)
+}
+
+.question-management-stop {
+    background: var(--orange)
+}
+
+.question-management-stop:disabled {
+    background: var(--grey)
+}
+
+.center-div {
+	width: 150px;
+	height: 150px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+}
